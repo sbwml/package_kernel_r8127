@@ -23,7 +23,7 @@ define KernelPackage/r8127
   DEPENDS:=@PCI_SUPPORT +kmod-libphy
   FILES:= $(PKG_BUILD_DIR)/r8127.ko
   AUTOLOAD:=$(call AutoProbe,r8127)
-  PROVIDES:=kmod-r8169
+  PROVIDES:=@kmod-r8169-any
 endef
 
 define Package/r8127/description
